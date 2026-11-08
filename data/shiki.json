@@ -1,0 +1,464 @@
+{
+ "a-place-further-than-universe": {
+  "shikimoriId": 35839,
+  "poster": "https://shikimori.one/system/animes/original/35839.jpg?1711974682",
+  "russian": "Дальше, чем космос",
+  "score": 8.5
+ },
+ "a-silent-voice": {
+  "shikimoriId": 29163,
+  "poster": "https://shikimori.one/system/animes/original/29163.jpg?1711974712",
+  "russian": "Это сэйю!",
+  "score": 7.04
+ },
+ "akira": {
+  "shikimoriId": 47,
+  "poster": "https://shikimori.one/system/animes/original/47.jpg?1711939807",
+  "russian": "Акира",
+  "score": 8.16
+ },
+ "angel-beats": {
+  "shikimoriId": 6547,
+  "poster": "https://shikimori.one/system/animes/original/6547.jpg?1711940920",
+  "russian": "Ангельские ритмы!",
+  "score": 8.05
+ },
+ "anohana": {
+  "shikimoriId": 9989,
+  "poster": "https://shikimori.one/system/animes/original/9989.jpg?1711941363",
+  "russian": "Невиданный цветок",
+  "score": 8.28
+ },
+ "attack-on-titan": {
+  "shikimoriId": 16498,
+  "poster": "https://shikimori.one/system/animes/original/16498.jpg?1711973439",
+  "russian": "Атака титанов",
+  "score": 8.58
+ },
+ "baccano": {
+  "shikimoriId": 2251,
+  "poster": "https://shikimori.one/system/animes/original/2251.jpg?1711943097",
+  "russian": "Шумиха!",
+  "score": 8.34
+ },
+ "bakemonogatari": {
+  "shikimoriId": 5081,
+  "poster": "https://shikimori.one/system/animes/original/5081.jpg?1711943310",
+  "russian": "Истории монстров",
+  "score": 8.32
+ },
+ "berserk-1997": {
+  "shikimoriId": 33,
+  "poster": "https://shikimori.one/system/animes/original/33.jpg?1711958056",
+  "russian": "Берсерк",
+  "score": 8.61
+ },
+ "bleach": {
+  "shikimoriId": 269,
+  "poster": "https://shikimori.one/system/animes/original/269.jpg?1711944143",
+  "russian": "Блич",
+  "score": 8
+ },
+ "bocchi-the-rock": {
+  "shikimoriId": 47917,
+  "poster": "https://shikimori.one/system/animes/original/47917.jpg?1711944241",
+  "russian": "Одинокий рокер!",
+  "score": 8.72
+ },
+ "chainsaw-man": {
+  "shikimoriId": 44511,
+  "poster": "https://shikimori.one/system/animes/original/44511.jpg?1711945574",
+  "russian": "Человек-бензопила",
+  "score": 8.42
+ },
+ "clannad": {
+  "shikimoriId": 2167,
+  "poster": "https://shikimori.one/system/animes/original/2167.jpg?1711946496",
+  "russian": "Кланнад",
+  "score": 7.99
+ },
+ "code-geass": {
+  "shikimoriId": 1575,
+  "poster": "https://shikimori.one/system/animes/original/1575.jpg?1711946588",
+  "russian": "Код Гиас: Восставший Лелуш",
+  "score": 8.71
+ },
+ "cowboy-bebop": {
+  "shikimoriId": 1,
+  "poster": "https://shikimori.one/system/animes/original/1.jpg?1711946754",
+  "russian": "Ковбой Бибоп",
+  "score": 8.75
+ },
+ "death-note": {
+  "shikimoriId": 1535,
+  "poster": "https://shikimori.one/assets/globals/missing_original.jpg?1711947446",
+  "russian": "Тетрадь смерти",
+  "score": 8.62
+ },
+ "demon-slayer": {
+  "shikimoriId": 38000,
+  "poster": "https://shikimori.one/system/animes/original/38000.jpg?1711958556",
+  "russian": "Клинок, рассекающий демонов",
+  "score": 8.4
+ },
+ "dororo": {
+  "shikimoriId": 37520,
+  "poster": "https://shikimori.one/system/animes/original/37520.jpg?1711948060",
+  "russian": "Дороро",
+  "score": 8.26
+ },
+ "dr-stone": {
+  "shikimoriId": 38691,
+  "poster": "https://shikimori.one/system/animes/original/38691.jpg?1711948374",
+  "russian": "Доктор Стоун",
+  "score": 8.26
+ },
+ "durarara": {
+  "shikimoriId": 6746,
+  "poster": "https://shikimori.one/system/animes/original/6746.jpg?1711948632",
+  "russian": "Дюрарара!!",
+  "score": 8.09
+ },
+ "evangelion": {
+  "shikimoriId": 30,
+  "poster": "https://shikimori.one/system/animes/original/30.jpg?1711973635",
+  "russian": "Евангелион нового поколения",
+  "score": 8.37
+ },
+ "fate-zero": {
+  "shikimoriId": 10087,
+  "poster": "https://shikimori.one/system/animes/original/10087.jpg?1711949285",
+  "russian": "Судьба/Начало",
+  "score": 8.26
+ },
+ "frieren": {
+  "shikimoriId": 52991,
+  "poster": "https://shikimori.one/system/animes/original/52991.jpg?1710731127",
+  "russian": "Провожающая в последний путь Фрирен",
+  "score": 9.25
+ },
+ "fruits-basket": {
+  "shikimoriId": 40417,
+  "poster": "https://shikimori.one/system/animes/original/40417.jpg?1711949624",
+  "russian": "Корзинка фруктов 2",
+  "score": 8.52
+ },
+ "fullmetal-alchemist-brotherhood": {
+  "shikimoriId": 5114,
+  "poster": "https://shikimori.one/system/animes/original/5114.jpg?1711949773",
+  "russian": "Стальной алхимик: Братство",
+  "score": 9.11
+ },
+ "ghost-in-the-shell-sac": {
+  "shikimoriId": 467,
+  "poster": "https://shikimori.one/system/animes/original/467.jpg?1711959812",
+  "russian": "Призрак в доспехах: Синдром одиночки",
+  "score": 8.42
+ },
+ "gintama": {
+  "shikimoriId": 918,
+  "poster": "https://shikimori.one/system/animes/original/918.jpg?1711951372",
+  "russian": "Гинтама",
+  "score": 8.93
+ },
+ "golden-kamuy": {
+  "shikimoriId": 36028,
+  "poster": "https://shikimori.one/system/animes/original/36028.jpg?1711951639",
+  "russian": "Золотое божество",
+  "score": 7.89
+ },
+ "gurren-lagann": {
+  "shikimoriId": 2001,
+  "poster": "https://shikimori.one/system/animes/original/2001.jpg?1711976940",
+  "russian": "Гуррен-Лаганн, пронзающий небеса",
+  "score": 8.65
+ },
+ "haikyuu": {
+  "shikimoriId": 20583,
+  "poster": "https://shikimori.one/system/animes/original/20583.jpg?1711952288",
+  "russian": "Волейбол!!",
+  "score": 8.43
+ },
+ "haruhi-suzumiya": {
+  "shikimoriId": 849,
+  "poster": "https://shikimori.one/system/animes/original/849.jpg?1711975840",
+  "russian": "Меланхолия Харухи Судзумии",
+  "score": 7.82
+ },
+ "horimiya": {
+  "shikimoriId": 42897,
+  "poster": "https://shikimori.one/system/animes/original/42897.jpg?1711954107",
+  "russian": "Хоримия",
+  "score": 8.18
+ },
+ "hunter-x-hunter": {
+  "shikimoriId": 11061,
+  "poster": "https://shikimori.one/system/animes/original/11061.jpg?1711954447",
+  "russian": "Охотник х Охотник (2011)",
+  "score": 9.03
+ },
+ "hyouka": {
+  "shikimoriId": 12189,
+  "poster": "https://shikimori.one/system/animes/original/12189.jpg?1711954571",
+  "russian": "Хёка",
+  "score": 8.04
+ },
+ "jujutsu-kaisen": {
+  "shikimoriId": 40748,
+  "poster": "https://shikimori.one/system/animes/original/40748.jpg?1711956606",
+  "russian": "Магическая битва",
+  "score": 8.49
+ },
+ "k-on-movie": {
+  "shikimoriId": 9617,
+  "poster": "https://shikimori.one/system/animes/original/9617.jpg?1711956813",
+  "russian": "Кэйон в кино!",
+  "score": 8.36
+ },
+ "k-on-s2": {
+  "shikimoriId": 7791,
+  "poster": "https://shikimori.one/system/animes/original/7791.jpg?1711956768",
+  "russian": "Кэйон!!",
+  "score": 8.19
+ },
+ "k-on": {
+  "shikimoriId": 5680,
+  "poster": "https://shikimori.one/system/animes/original/5680.jpg?1711956754",
+  "russian": "Кэйон!",
+  "score": 7.87
+ },
+ "kaguya-sama": {
+  "shikimoriId": 37999,
+  "poster": "https://shikimori.one/system/animes/original/37999.jpg?1711956945",
+  "russian": "Госпожа Кагуя: в любви как на войне",
+  "score": 8.4
+ },
+ "kanon-2006": {
+  "shikimoriId": 1530,
+  "poster": "https://shikimori.one/system/animes/original/1530.jpg?1711957571",
+  "russian": "Канон (2006)",
+  "score": 7.94
+ },
+ "kill-la-kill": {
+  "shikimoriId": 18679,
+  "poster": "https://shikimori.one/system/animes/original/18679.jpg?1711958570",
+  "russian": "Убей или умри",
+  "score": 8.03
+ },
+ "konosuba": {
+  "shikimoriId": 30831,
+  "poster": "https://shikimori.one/system/animes/original/30831.jpg?1711959601",
+  "russian": "Этот замечательный мир!",
+  "score": 8.09
+ },
+ "lucky-star": {
+  "shikimoriId": 1887,
+  "poster": "https://shikimori.one/system/animes/original/1887.jpg?1711961564",
+  "russian": "Счастливая звезда",
+  "score": 7.76
+ },
+ "made-in-abyss": {
+  "shikimoriId": 34599,
+  "poster": "https://shikimori.one/system/animes/original/34599.jpg?1711962078",
+  "russian": "Созданный в Бездне",
+  "score": 8.62
+ },
+ "madoka-magica": {
+  "shikimoriId": 9756,
+  "poster": "https://shikimori.one/system/animes/original/9756.jpg?1711962488",
+  "russian": "Девочка-волшебница Мадока★Волшебство",
+  "score": 8.39
+ },
+ "march-comes-like-lion": {
+  "shikimoriId": 31646,
+  "poster": "https://shikimori.one/system/animes/original/31646.jpg?1711937760",
+  "russian": "Мартовский лев",
+  "score": 8.37
+ },
+ "monster": {
+  "shikimoriId": 19,
+  "poster": "https://shikimori.one/system/animes/original/19.jpg?1711964464",
+  "russian": "Монстр",
+  "score": 8.9
+ },
+ "my-dress-up-darling": {
+  "shikimoriId": 48736,
+  "poster": "https://shikimori.one/system/animes/original/48736.jpg?1708765101",
+  "russian": "Эта фарфоровая кукла влюбилась",
+  "score": 8.12
+ },
+ "my-hero-academia": {
+  "shikimoriId": 31964,
+  "poster": "https://shikimori.one/system/animes/original/31964.jpg?1711944324",
+  "russian": "Моя геройская академия",
+  "score": 7.82
+ },
+ "nana": {
+  "shikimoriId": 877,
+  "poster": "https://shikimori.one/system/animes/original/877.jpg?1711965470",
+  "russian": "Нана",
+  "score": 8.58
+ },
+ "naruto": {
+  "shikimoriId": 1735,
+  "poster": "https://shikimori.one/system/animes/original/1735.jpg?1711965662",
+  "russian": "Наруто: Ураганные хроники",
+  "score": 8.29
+ },
+ "nichijou": {
+  "shikimoriId": 10165,
+  "poster": "https://shikimori.one/system/animes/original/10165.jpg?1711966129",
+  "russian": "Мелочи жизни",
+  "score": 8.47
+ },
+ "no-game-no-life": {
+  "shikimoriId": 19815,
+  "poster": "https://shikimori.one/system/animes/original/19815.jpg?1711966406",
+  "russian": "Нет игры — нет жизни",
+  "score": 8.03
+ },
+ "one-piece": {
+  "shikimoriId": 21,
+  "poster": "https://shikimori.one/system/animes/original/21.jpg?1718520367",
+  "russian": "Ван-Пис",
+  "score": 8.72
+ },
+ "one-punch-man": {
+  "shikimoriId": 30276,
+  "poster": "https://shikimori.one/system/animes/original/30276.jpg?1711967568",
+  "russian": "Ванпанчмен",
+  "score": 8.47
+ },
+ "oshi-no-ko": {
+  "shikimoriId": 52034,
+  "poster": "https://shikimori.one/system/animes/original/52034.jpg?1711937183",
+  "russian": "Ребёнок идола",
+  "score": 8.53
+ },
+ "overlord": {
+  "shikimoriId": 29803,
+  "poster": "https://shikimori.one/system/animes/original/29803.jpg?1711968252",
+  "russian": "Повелитель",
+  "score": 7.89
+ },
+ "paprika": {
+  "shikimoriId": 1943,
+  "poster": "https://shikimori.one/system/animes/original/1943.jpg?1711968438",
+  "russian": "Паприка",
+  "score": 8.05
+ },
+ "perfect-blue": {
+  "shikimoriId": 437,
+  "poster": "https://shikimori.one/system/animes/original/437.jpg?1711968641",
+  "russian": "Идеальная грусть",
+  "score": 8.56
+ },
+ "promised-neverland": {
+  "shikimoriId": 37779,
+  "poster": "https://shikimori.one/system/animes/original/37779.jpg?1711982147",
+  "russian": "Обещанный Неверленд",
+  "score": 8.47
+ },
+ "psycho-pass": {
+  "shikimoriId": 13601,
+  "poster": "https://shikimori.one/system/animes/original/13601.jpg?1711969519",
+  "russian": "Психопаспорт",
+  "score": 8.32
+ },
+ "re-zero": {
+  "shikimoriId": 31240,
+  "poster": "https://shikimori.one/system/animes/original/31240.jpg?1711970097",
+  "russian": "Re:Zero. Жизнь с нуля в альтернативном мире",
+  "score": 8.25
+ },
+ "samurai-champloo": {
+  "shikimoriId": 205,
+  "poster": "https://shikimori.one/system/animes/original/205.jpg?1711971815",
+  "russian": "Самурай Чамплу",
+  "score": 8.52
+ },
+ "serial-experiments-lain": {
+  "shikimoriId": 339,
+  "poster": "https://shikimori.one/system/animes/original/339.jpg?1711972591",
+  "russian": "Эксперименты Лэйн",
+  "score": 8.1
+ },
+ "spy-x-family": {
+  "shikimoriId": 50265,
+  "poster": "https://shikimori.one/system/animes/original/50265.jpg?1716777040",
+  "russian": "Семья шпиона",
+  "score": 8.41
+ },
+ "steins-gate": {
+  "shikimoriId": 9253,
+  "poster": "https://shikimori.one/system/animes/original/9253.jpg?1711975211",
+  "russian": "Врата Штейна",
+  "score": 9.07
+ },
+ "sword-art-online": {
+  "shikimoriId": 11757,
+  "poster": "https://shikimori.one/system/animes/original/11757.jpg?1711975853",
+  "russian": "Мастера Меча Онлайн",
+  "score": 7.23
+ },
+ "tokyo-ghoul": {
+  "shikimoriId": 22319,
+  "poster": "https://shikimori.one/system/animes/original/22319.jpg?1711978006",
+  "russian": "Токийский гуль",
+  "score": 7.79
+ },
+ "tokyo-godfathers": {
+  "shikimoriId": 759,
+  "poster": "https://shikimori.one/system/animes/original/759.jpg?1711977980",
+  "russian": "Однажды в Токио",
+  "score": 8.29
+ },
+ "toradora": {
+  "shikimoriId": 4224,
+  "poster": "https://shikimori.one/system/animes/original/4224.jpg?1711978202",
+  "russian": "Торадора!",
+  "score": 8.04
+ },
+ "trigun": {
+  "shikimoriId": 6,
+  "poster": "https://shikimori.one/system/animes/original/6.jpg?1711978428",
+  "russian": "Триган",
+  "score": 8.22
+ },
+ "violet-evergarden": {
+  "shikimoriId": 33352,
+  "poster": "https://shikimori.one/system/animes/original/33352.jpg?1711979744",
+  "russian": "Вайолет Эвергарден",
+  "score": 8.69
+ },
+ "weathering-with-you": {
+  "shikimoriId": 38826,
+  "poster": "https://shikimori.one/system/animes/original/38826.jpg?1711977019",
+  "russian": "Дитя погоды",
+  "score": 8.27
+ },
+ "wotakoi": {
+  "shikimoriId": 35968,
+  "poster": "https://shikimori.one/system/animes/original/35968.jpg?1711980660",
+  "russian": "Так сложно любить отаку",
+  "score": 7.91
+ },
+ "your-lie-in-april": {
+  "shikimoriId": 23273,
+  "poster": "https://shikimori.one/system/animes/original/23273.jpg?1711973143",
+  "russian": "Твоя апрельская ложь",
+  "score": 8.64
+ },
+ "your-name": {
+  "shikimoriId": 32281,
+  "poster": "https://shikimori.one/system/animes/original/32281.jpg?1711958651",
+  "russian": "Твоё имя",
+  "score": 8.82
+ },
+ "yuru-camp": {
+  "shikimoriId": 34798,
+  "poster": "https://shikimori.one/system/animes/original/34798.jpg?1711983335",
+  "russian": "Лагерь на свежем воздухе",
+  "score": 8.26
+ }
+}

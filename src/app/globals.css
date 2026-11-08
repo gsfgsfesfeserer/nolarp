@@ -1,0 +1,448 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-jp: var(--font-jp);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-brand: var(--brand);
+  --color-gold: var(--gold);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root,
+.dark {
+  --radius: 0.75rem;
+  --brand: #ff2b4a;
+  --gold: #d4af37;
+  --background: #07060a;
+  --foreground: #f2efe7;
+  --card: #100e15;
+  --card-foreground: #f2efe7;
+  --popover: #14121b;
+  --popover-foreground: #f2efe7;
+  --primary: #ff2b4a;
+  --primary-foreground: #ffffff;
+  --secondary: #1a1722;
+  --secondary-foreground: #f2efe7;
+  --muted: #1a1722;
+  --muted-foreground: #928d9c;
+  --accent: #221e2b;
+  --accent-foreground: #f2efe7;
+  --destructive: #ff2b4a;
+  --border: rgba(242, 239, 231, 0.08);
+  --input: rgba(242, 239, 231, 0.12);
+  --ring: rgba(255, 43, 74, 0.5);
+  --sidebar: #100e15;
+  --sidebar-foreground: #f2efe7;
+  --sidebar-primary: #ff2b4a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #221e2b;
+  --sidebar-accent-foreground: #f2efe7;
+  --sidebar-border: rgba(242, 239, 231, 0.08);
+  --sidebar-ring: rgba(255, 43, 74, 0.5);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 15% -5%, rgba(255, 43, 74, 0.07), transparent 60%),
+      radial-gradient(ellipse 60% 45% at 90% 15%, rgba(212, 175, 55, 0.05), transparent 60%),
+      radial-gradient(ellipse 70% 60% at 50% 110%, rgba(120, 60, 160, 0.06), transparent 65%);
+    background-attachment: fixed;
+  }
+  /* film grain */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 4;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+  }
+  ::selection {
+    background: #ff2b4a;
+    color: #fff;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0910;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #262231;
+    border-radius: 8px;
+    border: 2px solid #0a0910;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff2b4a;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  }
+  .font-jp {
+    font-family: var(--font-jp), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  }
+  .vertical-jp {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 0.35em;
+  }
+  .text-stroke {
+    -webkit-text-stroke: 1px rgba(255, 43, 74, 0.55);
+    color: transparent;
+  }
+  .slash-divider {
+    background: linear-gradient(
+      100deg,
+      transparent 0%,
+      rgba(255, 43, 74, 0.55) 46%,
+      #ffffff 50%,
+      rgba(255, 43, 74, 0.55) 54%,
+      transparent 100%
+    );
+    height: 1px;
+  }
+}
+
+/* ---------- petals ---------- */
+.petal-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.petal-fall {
+  position: absolute;
+  top: -6vh;
+  animation: petal-fall var(--dur) linear var(--delay) infinite;
+  will-change: transform;
+}
+.petal-sway {
+  animation: petal-sway var(--sway) ease-in-out var(--delay) infinite alternate;
+}
+.petal-leaf {
+  width: var(--size);
+  height: calc(var(--size) * 0.72);
+  background: linear-gradient(135deg, var(--pc) 0%, var(--pc2) 100%);
+  border-radius: 100% 0 100% 0;
+  opacity: var(--op);
+  animation: petal-spin var(--spin) linear var(--delay) infinite;
+  filter: drop-shadow(0 0 4px rgba(255, 150, 180, 0.35));
+}
+@keyframes petal-fall {
+  0% {
+    transform: translateY(-8vh) translateX(0);
+  }
+  100% {
+    transform: translateY(112vh) translateX(var(--drift));
+  }
+}
+@keyframes petal-sway {
+  0% {
+    transform: translateX(calc(var(--amp) * -1));
+  }
+  100% {
+    transform: translateX(var(--amp));
+  }
+}
+@keyframes petal-spin {
+  0% {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
+
+/* ---------- intro ---------- */
+.intro-slice-top {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+.intro-slice-bottom {
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+/* плавление реальности: фон размывается и насыщается по мере разреза */
+.melt-reality {
+  position: absolute;
+  inset: -2%;
+  z-index: 0;
+  pointer-events: none;
+  animation: reality-melt 1.35s ease-in forwards;
+}
+@keyframes reality-melt {
+  0% {
+    backdrop-filter: blur(0px) saturate(1) hue-rotate(0deg);
+    background: radial-gradient(ellipse at center, rgba(255, 43, 74, 0) 45%, rgba(255, 43, 74, 0.04) 100%);
+  }
+  55% {
+    backdrop-filter: blur(9px) saturate(1.55) hue-rotate(-7deg);
+    background: radial-gradient(ellipse at center, rgba(255, 43, 74, 0.09) 30%, rgba(110, 0, 36, 0.18) 100%);
+  }
+  100% {
+    backdrop-filter: blur(20px) saturate(1.9) hue-rotate(-14deg);
+    background: radial-gradient(ellipse at center, rgba(255, 43, 74, 0.16) 24%, rgba(55, 0, 18, 0.34) 100%);
+  }
+}
+/* разрывающие полосы реальности */
+.reality-tear {
+  position: absolute;
+  left: -6%;
+  width: 112%;
+  height: 2px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 30%, rgba(255, 43, 74, 0.65) 55%, transparent);
+  filter: blur(1px);
+  opacity: 0;
+  animation: tear-slide 0.9s ease-out forwards;
+}
+@keyframes tear-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-8%) scaleX(0.6);
+  }
+  18% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(7%) scaleX(1.15);
+  }
+}
+/* потёки с разреза */
+.melt-streak {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, rgba(242, 239, 231, 0.9), rgba(255, 43, 74, 0.4) 55%, transparent);
+  filter: blur(1px);
+  opacity: 0;
+  animation: melt-drip var(--md-dur) ease-in var(--md-delay) forwards;
+}
+@keyframes melt-drip {
+  0% {
+    opacity: 0;
+    transform: translateY(-6px) scaleY(0.3);
+  }
+  14% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(var(--md-fall)) scaleY(1.2);
+  }
+}
+@keyframes slash-flash {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ember-rise {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--ex), var(--ey), 0) scale(0.2);
+    opacity: 0;
+  }
+}
+
+/* ---------- misc ---------- */
+.glow-card {
+  transition:
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
+}
+/* блик, пробегающий по карточке */
+.card-shine {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 42%, rgba(255, 255, 255, 0.16) 50%, transparent 58%);
+  transform: translateX(-130%) skewX(-6deg);
+  transition: transform 0.85s ease;
+}
+.group:hover .card-shine {
+  transform: translateX(130%) skewX(-6deg);
+}
+/* эквалайзер у музыки */
+.eq {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 13px;
+}
+.eq i {
+  width: 3px;
+  border-radius: 1px;
+  background: currentColor;
+  transform-origin: bottom;
+  animation: eq-bounce 1.05s ease-in-out infinite;
+}
+.eq i:nth-child(1) { height: 58%; animation-delay: 0s; }
+.eq i:nth-child(2) { height: 100%; animation-delay: 0.18s; }
+.eq i:nth-child(3) { height: 72%; animation-delay: 0.34s; }
+.eq i:nth-child(4) { height: 88%; animation-delay: 0.1s; }
+@keyframes eq-bounce {
+  0%, 100% { transform: scaleY(0.35); }
+  50% { transform: scaleY(1); }
+}
+/* сканлайн по герою */
+.scanline {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.scanline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -22%;
+  height: 180px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.04) 45%, rgba(255, 43, 74, 0.07) 55%, transparent);
+  animation: scan-y 8s linear infinite;
+}
+@keyframes scan-y {
+  0% { top: -22%; }
+  100% { top: 118%; }
+}
+/* разрез по логотипу при наведении */
+.logo-slash {
+  position: relative;
+  overflow: hidden;
+}
+.logo-slash::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  width: 160%;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transform: translateX(-120%) rotate(-2deg);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.2s;
+}
+a:hover .logo-slash::after {
+  transform: translateX(120%) rotate(-2deg);
+  opacity: 1;
+  transition: transform 0.45s ease, opacity 0.05s;
+}
+/* пульс свечения у главной кнопки */
+.btn-pulse {
+  animation: btn-pulse 2.6s ease-in-out infinite;
+}
+@keyframes btn-pulse {
+  0%, 100% {
+    box-shadow: 0 10px 36px -8px rgba(255, 43, 74, 0.7);
+  }
+  50% {
+    box-shadow: 0 10px 48px -4px rgba(255, 43, 74, 0.95);
+  }
+}
+/* прожектор обучения */
+.tour-spot {
+  box-shadow:
+    0 0 0 9999px rgba(5, 4, 9, 0.88),
+    0 0 0 1.5px rgba(255, 43, 74, 0.65),
+    0 0 44px rgba(255, 43, 74, 0.35);
+}
+.tour-spot::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border: 1.5px solid rgba(255, 43, 74, 0.7);
+  border-radius: inherit;
+  animation: tour-ring 1.6s ease-out infinite;
+  pointer-events: none;
+}
+@keyframes tour-ring {
+  0% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.07);
+  }
+}
+/* мягкое покачивание плавающих постеров */
+@keyframes floaty {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -10px; }
+}
+.floaty {
+  animation: floaty var(--float-dur, 6s) ease-in-out var(--float-delay, 0s) infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .petal-fall,
+  .petal-sway,
+  .petal-leaf,
+  .scanline,
+  .eq i,
+  .btn-pulse,
+  .tour-spot::after,
+  .floaty,
+  .melt-reality,
+  .reality-tear,
+  .melt-streak {
+    animation: none !important;
+  }
+  .card-shine {
+    display: none;
+  }
+}
